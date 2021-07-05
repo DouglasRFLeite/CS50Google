@@ -19,6 +19,7 @@
             border: 1px solid rgba(161, 161, 161, 0.733);
             border-radius: 44px;
             text-align: center;
+            margin-top: 20px;
         }
 
         #query_bar{
@@ -27,7 +28,6 @@
             height: 40px;
             border: none;
             text-align: left;
-            
         }
 
         #query_bar:focus{
@@ -47,18 +47,26 @@
         #button:hover{
             border: 1px solid rgb(197, 197, 197);
             border-radius: 5px;
-            radius: 5px;
+        }
+
+        span{
+            margin-left: 510px;
+            margin-top: -200px;
         }
     </style>
 </head>
 <body>
-
+    <a href='homepage.html'>Voltar</a>
+    Imagens
     <img name="logo" src="googlelogo_color_272x92dp.png" alt="Google Colored Logo" width="272" height="92">
-    <form action="https://google.com/search">
+    <span style = "color: rgb(105, 105, 252); font-family: Arial, Helvetica, sans-serif; font-weight: bold; ">Images</span>
+    
+    <form action="https://google.com/search?">">
         <div>
             <input type="text" id = "query_bar" name="q">
             <input type="submit" id = "button" value="Google Search">
         </div>
+        <input type = "hidden" name = "tbm" value = "isch">
     </form>
 
 </body>
