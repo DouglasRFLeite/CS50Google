@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <style>
+
+        body{
+            font-family: "Roboto";
+        }
+
         img{
             display: block;
             margin-left: auto;
@@ -41,17 +49,24 @@
             border: 1px solid white;
             border-radius: 5px;
             background-color: rgb(245, 245, 245);
-            font: 12pt normal Arial, sans-serif;
+            font: 12pt "Roboto";
         }
 
         #button:hover{
             border: 1px solid rgb(197, 197, 197);
             border-radius: 5px;
         }
+
+        a{
+            font-size: 11pt;
+            float: right;
+            margin-top: -180px;
+        }
     </style>
 </head>
 <body>
-    <a href="images.html">Images</a>
+    <a href="images.html" style="margin-right: 120px;">Images</a>
+    <a href="advanced.html">Advanced Search</a>
     <img name="logo" src="googlelogo_color_272x92dp.png" alt="Google Colored Logo" width="272" height="92">
     <form action="https://google.com/search">
         <div>

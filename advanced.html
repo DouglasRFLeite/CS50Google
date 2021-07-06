@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        body{
+            padding: 2px;
+            font: 10pt "Roboto";
+        }
+        #line{
+            height: 1px;
+            background-color: rgba(214, 214, 214, 0.726);
+            margin-top: 25px;
+        }
+
+        h2{
+            margin-left: 30px;
+            color: rgb(212, 0, 0);
+            font: 17pt "Roboto";
+            margin-top: 30px;
+        }
+
+        #boxes{
+            margin-left: 30px;
+            margin-top: 47px;
+        }
+
+        a{
+            font-size: 12pt;
+            float: right;
+        }
+
+        .query{
+            width: 580px;
+            height: 25px;
+            margin-left: 10px;
+            border: none;
+        }
+
+        .query:focus{
+            outline: none;
+        }
+
+        .q_bars{
+            border: 1px solid rgb(204, 203, 203);
+        }
+
+        .query_surr{
+            padding: 5px;
+        }
+
+        table{
+            margin-left: -3px;
+            margin-top: -15px;
+        }
+
+        #button{
+            margin-left: 636px;
+            width: 130px;
+            height: 32px;
+            background-color: rgb(66 133 244);
+            border: none;
+            border-radius: 2px;
+            font: 9pt 'Roboto';
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <img name = "logo" src="googlelogo_mini_95x41.png" alt = "Google Smaller Logo" width="95px" height="41px">
+    <a href='homepage.html'>Voltar</a>
+    <h2>Advanced search</h2>
+    <div id = "line"></div>
+    <div id= "boxes">
+        <form action="https://google.com/search">
+            <p style="font-size: 13pt;">Find pages with...</p>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>all these words:</td> 
+                    <td>
+                        <div class="query_surr">
+                            <div class="q_bars">
+                                <input type="text" id="all_bar" class = "query" name="as_q">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>this exact word or phrase:</td> 
+                    <td>
+                        <div class="query_surr">
+                            <div class="q_bars">
+                                <input type="text" id="exact_bar" class = "query" name="as_epq">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>any of these words:</td> 
+                    <td>
+                        <div class="query_surr">
+                            <div class="q_bars">
+                                <input type="text" id="any_bar" class = "query" name="as_oq">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>none of these words:</td> 
+                    <td>
+                        <div class="query_surr">
+                            <div class="q_bars">
+                                <input type="text" id="none_bar" class = "query" name="as_eq">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" id="button" value="Advanced Search">
+        </form>
+
+
+    </div>
+</body>
+</html>
+
+<!--https://www.google.com/search?as_q=teste+quadrado&as_epq=onde+estou&as_oq=chegando+vou&as_eq=ol%C3%A1+tchau&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=-->
